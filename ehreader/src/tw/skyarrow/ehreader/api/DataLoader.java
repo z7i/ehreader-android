@@ -62,11 +62,11 @@ public class DataLoader {
     private HttpContext httpContext;
     private LoginHelper loginHelper;
 
-    public static final Pattern pGalleryUrl = Pattern.compile("https://(e-|ex)hentai\\.org/g/(\\d+)/(\\w+)");
-    public static final Pattern pPhotoUrl = Pattern.compile("https://(e-|ex)hentai\\.org/s/(\\w+?)/(\\d+)-(\\d+)");
+    public static final Pattern pGalleryUrl = Pattern.compile("https://e-hentai\\.nhent\\.ai/g/(\\d+)/(\\w+)");
+    public static final Pattern pPhotoUrl = Pattern.compile("https://e-hentai\\.nhent\\.ai/s/(\\w+?)/(\\d+)-(\\d+)");
     public static final Pattern pShowkey = Pattern.compile("var showkey.*=.*\"([\\w-]+?)\";");
     public static final Pattern pImageSrc = Pattern.compile("<img id=\"img\" src=\"(.+)/(.+?)\"");
-    public static final Pattern pGalleryURL = Pattern.compile("<a href=\"https://(e-|ex)hentai\\.org/g/(\\d+)/(\\w+)/\" onmouseover");
+    public static final Pattern pGalleryURL = Pattern.compile("<a href=\"https://e-hentai\\.nhent\\.ai/g/(\\d+)/(\\w+)/\" onmouseover");
 
     private DataLoader(Context context) {
         this.context = context;
